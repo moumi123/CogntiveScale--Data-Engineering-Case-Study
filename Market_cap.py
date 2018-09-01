@@ -1,6 +1,3 @@
-import requests
-from bs4 import BeautifulSoup
-from time import sleep
 import pymysql
 import pandas as pd
 from pandas.io import sql
