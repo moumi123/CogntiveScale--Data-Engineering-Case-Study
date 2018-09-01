@@ -12,6 +12,11 @@ def find_nth(string, substring, n):
 
 res=requests.get('http://www.moneycontrol.com/india/stockpricequote').content
 s=BeautifulSoup(res,'html.parser')
+
+
+# Storing Company Name, Sector,Company URL details from the above url using BeautifulSoup and requests
+
+
 p=s.find_all('a',{"class":'bl_12'})
 #print (p)
 sector_wise_company=[]
@@ -46,3 +51,8 @@ db.close()
 
 #http://www.moneycontrol.com/india/stockpricequote/diversified/3mindia/MI42
 
+"""
+For example in the above url "3mindia" this is the company name and 
+"stockpricequote" is the sector of the url
+
+"""

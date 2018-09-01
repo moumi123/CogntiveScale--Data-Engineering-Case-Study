@@ -18,7 +18,10 @@ df2=pd.read_sql(sql,db)
 all_info=[]
 bucket_array=np.linspace(0,699,num=700/5)
 #print type(bucket_array)
-# n denotes the number of companies, here just for sample I have taken 100
+""" n denotes the number of companies, here just for sample I have taken 100.
+    Also, two types of P/E ratios was there I have scrapped both of them and binned the data too
+
+"""
 n=100
 for info in range(0,n):
     #len(df2['name'])
