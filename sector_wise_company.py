@@ -2,9 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 from time import sleep
 import pymysql
-#pymysql.install_as_MySQLdb()
 db=pymysql.connect('localhost','root','Bridge@1234','CogntiveScale')
-#cursor=db.cursor()
+
 def find_nth(string, substring, n):
     parts = string.split(substring, n + 1)
     if len(parts) <= n + 1:
