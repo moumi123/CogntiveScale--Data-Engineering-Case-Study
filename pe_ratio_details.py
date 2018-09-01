@@ -22,7 +22,7 @@ bucket_array=np.linspace(0,699,num=700/5)
     Also, two types of P/E ratios was there I have scrapped both of them and binned the data too
 
 """
-n=10
+n=100
 for info in range(0,n):
     #len(df2['name'])
     url=df2.iloc[info][1]
